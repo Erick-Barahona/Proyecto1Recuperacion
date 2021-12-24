@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:mapa="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Proyecto1.Mapa"
+             Title="Mapa de ubicacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lat" Text="{Binding latitude}" IsVisible="false"></Label>
+            <Label  x:Name="longit" Text="{Binding longitude}" IsVisible="false"></Label>
+            <Label  x:Name="descr" Text="{Binding descripcion_corta}" IsVisible="false"></Label>
+            <Label  x:Name="ubic" Text="{Binding descripcion_ubicacion}" IsVisible="false"></Label>
+            <Frame>
+                <mapa:Map   MapType="Satellite" HorizontalOptions="FillAndExpand" HeightRequest="600"  x:Name="m" IsShowingUser="True">
+
+                </mapa:Map>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

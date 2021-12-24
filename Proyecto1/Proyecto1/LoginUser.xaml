@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto1.LoginUser"
+             Title="Inicio de sesion">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <StackLayout Padding="10">
+                <Frame CornerRadius="20"  Visual="Material">
+                    <Grid>
+                        <Image Grid.Row="0" Source="https://www.uth.hn/wp-content/uploads/2019/12/logo-1.png"></Image>
+                    </Grid>
+
+                </Frame>
+            </StackLayout>
+
+           
+                <StackLayout Visual="Material">
+
+                <StackLayout Orientation="Vertical">
+                    <Entry x:Name="_usuario" Placeholder="Usuario"></Entry>
+                    <Entry x:Name="_password" IsPassword="True" Placeholder="Password"></Entry>
+                </StackLayout>
+
+                <ActivityIndicator x:Name="registro">
+                    
+                </ActivityIndicator>
+                        <Grid>
+                    <Button Margin="0,10,0,10" Clicked="IniciarSesion" HeightRequest="50" x:Name="Salvar"  BackgroundColor="#368A37" Grid.Row="0" Visual="Material" Text="Iniciar"></Button>
+                            <Button  Margin="0,0,0,20" HeightRequest="50" Grid.Row="1" Clicked="Button_Clicked" BackgroundColor="#368A87"  Visual="Material" Text="Registrarse"></Button>
+                        </Grid>
+                        
+                   
+                </StackLayout>
+
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
